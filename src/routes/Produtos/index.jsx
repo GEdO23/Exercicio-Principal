@@ -1,3 +1,4 @@
+import { ListaProdutos } from "../../components/ListaProdutos";
 
 export default function Produtos() {
 
@@ -14,6 +15,17 @@ export default function Produtos() {
                     <th>DESCRIÇÃO</th>
                     <th>PREÇO</th>
                 </tr>
+
+            {ListaProdutos.map( (prod, i)=> (
+                <tr key={i}>
+
+                    <td>{prod.id}</td>
+                    <td>{prod.nome}</td>
+                    <td>{prod.desc}</td>
+                    <td>{prod.preco}</td>
+
+                </tr>
+            ))}
             </table>
 
         </div>
