@@ -3,9 +3,11 @@ export default function Error() {
 
   return (
     <>
-    
-        <div>Erro - 404</div>
+        <div>
+        
+            <h1>Erro - 404</h1>
 
+        </div>
     </>
   )
 }
